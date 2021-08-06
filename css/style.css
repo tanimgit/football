@@ -6,15 +6,15 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 /* header container style */
 .main-top{    
     background-color: blue;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    grid-template-columns:repeat(2,1fr) ;
+    /* justify-content: center; */
 }
 
 .top-left-box{
@@ -47,7 +47,7 @@ body{
     font-size: 16px;;
 }
 .top-right-box{
-    width:calc(100%-485px);
+    width:50%;
     margin:153px 141px 86px 0px;
     
 }
@@ -148,3 +148,84 @@ footer{
     color:#000000;
     font-weight: 400;
 }
+
+/* media queries */
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    body{
+        margin:0;
+    }
+    .top-left-box,.watch-link-class{
+        width:100%;        
+        margin:0;
+        padding:0;
+    }
+    .top-right-box{
+        width:100%;
+        margin:0;
+        padding:0;
+    
+    }
+    .top-right-box img{
+        width:100%;           
+    }
+    .main-top{
+        width:100%;       
+        margin:0;
+        padding:0;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* .highlights-video img{
+        width:100%;
+    } */
+    .player-album{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin:0;
+        padding:0;
+    }
+
+    .highlights{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin:0;
+        padding:0;
+    }
+
+    .highlights-news{
+        width: 100%;
+    }
+
+    .highlights-news-title{
+        font-size: 25px;
+    }
+    .highlights-news-description{
+        width:95%;
+    }
+    .highlights-video img{
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+    }
+  
+    .player-box{        
+        margin:0;                   
+    }
+
+     footer{
+        width:100%;
+        margin-top:10px;
+        padding:0px;
+    } 
+
+    .footer-logo img {
+        width: 70%;        
+    }
+}
+/* end mobile devices */

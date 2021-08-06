@@ -1,0 +1,150 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding:0;
+}
+
+/* header container style */
+.main-top{    
+    background-color: blue;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.top-left-box{
+    width:485px;
+    margin-left:156px;
+    margin-top:207px;
+    margin-bottom:240px;
+}
+
+.top-left-title{
+    font-size: 64px;
+    font-weight: 700px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.watch-link-class{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color:#FFFFFF;
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    padding:10px 24px;
+    margin-top: 0px;
+    margin-bottom:156px;
+}
+
+.fa-arrow-right{
+    margin-left:10px;
+    font-size: 16px;;
+}
+.top-right-box{
+    width:calc(100%-485px);
+    margin:153px 141px 86px 0px;
+    
+}
+.top-right-box img{
+    width: 557px;
+    height: 448px;
+    margin-top:40px;
+}
+
+/* section players album */
+.player-album{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    /* justify-items: center; */
+    padding:15px;
+    margin:70px 130px 50px 130px;
+    }
+
+.player-box{
+    width:330px;
+    height:474px;
+    box-shadow:10px 10px 35px grey;
+    border-radius: 10px;
+    padding:3%;
+    
+}
+
+.player-box img{
+    width:100%;
+}
+
+.player-title{
+    font-size:28px;
+    color:#18191F;
+}
+.player-details{
+    color: #6C6C6C;
+    font-size: 16px;
+
+}
+/*highlights starts*/
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-row-gap: 27px; */
+    grid-column-gap: 66px;
+    /* justify-items: center; */
+    padding:15px;
+    margin:80px 130px 50px 130px;
+}
+
+.highlights-news{
+    width:469px;
+    height :309px;
+    margin-top:3%;
+}
+
+.highlights-news-title{
+    font-size: 48px;
+    margin-bottom:5px;
+}
+.highlights-news-description{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom:30px;
+
+}
+.highlights-video img{
+    height: 427px;
+    width: 567px;
+}
+
+/*footer styles*/
+footer{
+    margin:40px 0 0 30px;
+    text-align:center;
+}
+
+.footer-logo img{
+    width:480px;
+    height:110px;
+}
+.social-link .fab{
+    color:grey;
+    width:17.7px;
+    height:17.7px;
+    border-radius: 25px;
+    background-color:lightgray ;
+    padding:10px;
+    margin-left:15px;
+    
+}
+.copyright{
+    font-size: 18px;
+    color:#000000;
+    font-weight: 400;
+}
